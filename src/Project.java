@@ -1,18 +1,18 @@
 import java.util.Date;
 
 public class Project {
-	private int id;
-	private String name;
+	private static int id;
+	private static String name;
 	private String type;
 //	private Date startDate = new Date();;
 //	private Date endDate = new Date();
 //	Project project = new Project = new Project();
 
 	public static void main(String[] args) {
-		addProject();
+		addProject(id, name);
 	}
 
-	public static void addProject() {
+	public static void addProject(int id, String name) {
 		Tester tester = new Tester();
 		tester.testing();
 	}

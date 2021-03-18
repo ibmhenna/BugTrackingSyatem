@@ -9,20 +9,15 @@ public class Bug {
 	private static BUGSTATUS status = BUGSTATUS.NEW;
 	private SEVERITY severity = SEVERITY.MILD;
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
 	public String getName() {
 		return name;
 	}
 
 	public void setName(String name) {
 		this.name = name;
+		if (name == null) {
+
+		}
 	}
 
 	public String getPriority() {
@@ -47,6 +42,38 @@ public class Bug {
 
 	public void setBuildVersion(String buildVersion) {
 		this.buildVersion = buildVersion;
+	}
+
+	public BUGTYPE getType() {
+		return type;
+	}
+
+	public void setType(BUGTYPE type) {
+		this.type = type;
+	}
+
+	public static BUGSTATUS getStatus() {
+		return status;
+	}
+
+	public static void setStatus(BUGSTATUS status) {
+		Bug.status = status;
+	}
+
+	public SEVERITY getSeverity() {
+		return severity;
+	}
+
+	public void setSeverity(SEVERITY severity) {
+		this.severity = severity;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 }
